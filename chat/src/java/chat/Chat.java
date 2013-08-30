@@ -20,7 +20,7 @@ import javax.websocket.server.ServerEndpoint;
  * @author Bruno Barbosa da Silva
  * @E-mail: bbsgt@hotmail.com
  * @Site: www.brunobs.com.br
- * 
+ * Classe Responsável por devolver a requisição para os usuários!
  */
 @ServerEndpoint(value = "/chatendpoint", encoders = {ChatEncoder.class}, decoders = {ChatDecoder.class})
 public class Chat {
