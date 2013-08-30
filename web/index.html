@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+
+    <h:head>
+        <title>Glassfish WebSocket: Chat</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="js/enviarMensagem.js"></script>
+    </h:head>
+    <h:body>
+        <div id="output"></div>
+        <div id="body">
+            <div id="menu">
+                <p class="welcome">
+                    Bem Vindo,<input id="user" value="" />
+                </p>
+                <div style="clear: both"></div>
+            </div>
+
+            <div id="chatbox">
+                <textarea id="mensagens" rows="16" cols="48" readonly="readonly"></textarea>
+            </div>
+
+            <form name="inputForm" action="" onsubmit=" return enviarMensagem();">
+                <input name="mensagem" type="text" id="message" size="63" autofocus="true" /> 
+                <input type="submit" value="Enviar..." />
+            </form>
+        </div>
+        <script type="text/javascript" src="js/websocket.js"></script>
+
+    </h:body>
+</html>
