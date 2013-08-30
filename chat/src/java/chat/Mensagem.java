@@ -13,7 +13,7 @@ import javax.json.JsonObject;
  * @author Bruno Barbosa da Silva
  * @E-mail: bbsgt@hotmail.com
  * @Site: www.brunobs.com.br
- * 
+ *  Json da Mensagem
  */
 
 public class Mensagem {
