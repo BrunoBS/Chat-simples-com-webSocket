@@ -17,7 +17,10 @@ import javax.websocket.server.ServerEndpoint;
 
 /**
  *
- * @author Alunos
+ * @author Bruno Barbosa da Silva
+ * @E-mail: bbsgt@hotmail.com
+ * @Site: www.brunobs.com.br
+ * 
  */
 @ServerEndpoint(value = "/chatendpoint", encoders = {ChatEncoder.class}, decoders = {ChatDecoder.class})
 public class Chat {

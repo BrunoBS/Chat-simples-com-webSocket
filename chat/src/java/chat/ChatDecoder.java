@@ -14,22 +14,25 @@ import javax.websocket.EndpointConfig;
 
 /**
  *
- * @author Alunos
+ * @author Bruno Barbosa da Silva
+ * @E-mail: bbsgt@hotmail.com
+ * @Site: www.brunobs.com.br
+ *
  */
-public class ChatDecoder implements Decoder.Text<Mensagem>{
+public class ChatDecoder implements Decoder.Text<Mensagem> {
 
     @Override
-    public void init(EndpointConfig config) {        
+    public void init(EndpointConfig config) {
     }
 
     @Override
-    public void destroy() {        
+    public void destroy() {
     }
 
     @Override
     public Mensagem decode(String s) throws DecodeException {
-        StringReader stringReader=new StringReader(s);
-        JsonObject jsonObject= Json.createReader(stringReader).readObject();
+        StringReader stringReader = new StringReader(s);
+        JsonObject jsonObject = Json.createReader(stringReader).readObject();
         return new Mensagem(jsonObject);
     }
 
@@ -43,7 +46,4 @@ public class ChatDecoder implements Decoder.Text<Mensagem>{
             return false;
         }
     }
-    
-    
-    
 }

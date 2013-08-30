@@ -10,8 +10,12 @@ import javax.json.JsonObject;
 
 /**
  *
- * @author Alunos
+ * @author Bruno Barbosa da Silva
+ * @E-mail: bbsgt@hotmail.com
+ * @Site: www.brunobs.com.br
+ * 
  */
+
 public class Mensagem {
     
     private JsonObject json;

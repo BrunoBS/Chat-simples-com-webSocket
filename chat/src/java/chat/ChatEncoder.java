@@ -10,8 +10,12 @@ import javax.websocket.EndpointConfig;
 
 /**
  *
- * @author Alunos
+ * @author Bruno Barbosa da Silva
+ * @E-mail: bbsgt@hotmail.com
+ * @Site: www.brunobs.com.br
+ * 
  */
+
 public class ChatEncoder implements Encoder.Text<Mensagem>{
 
     @Override
